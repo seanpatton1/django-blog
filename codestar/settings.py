@@ -87,9 +87,13 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("postgres://ufhvmkztst6:UQT3Ovw7myXA@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/genre_cake_liver_670409"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
