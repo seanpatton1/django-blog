@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("postgres://ufhvmkztst6:UQT3Ovw7myXA@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/genre_cake_liver_670409"))
 }
 
 
