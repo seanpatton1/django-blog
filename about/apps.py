@@ -1,6 +1,6 @@
-from . import views
-from django.urls import path
+from django.apps import AppConfig
 
-urlpatterns = [
-    path('', views.about_me, name='about'),
-]
+
+class AboutConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'about'
